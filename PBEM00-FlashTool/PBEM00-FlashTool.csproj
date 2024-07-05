@@ -17,6 +17,10 @@ Made by MalNEW aka. Malware_MEZM</Description>
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Command.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="bin\Debug\net8.0-windows\license">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
@@ -24,6 +28,11 @@ Made by MalNEW aka. Malware_MEZM</Description>
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="NuGet.CommandLine" Version="6.10.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Redpoint.ThirdParty.System.CommandLine" Version="2024.1177.305" />
     <PackageReference Include="YamlDotNet" Version="15.3.0" />
   </ItemGroup>
 
